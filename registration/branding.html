@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="regforms.css">
+  </head>
+<body id="branding"><form method="post" action="brandingsql.php">
+  <center>
+    <div class="container">
+     <div class="card">
+       <form method="post" action="branding.php">
+     
+         <a class="singup">Branding Team Registration</a>
+ 
+         <div class="inputBox">
+             <input type="text" required="required" name="name">
+             <span>Name</span>
+         </div>
+         <div class="inputBox">
+             <input type="text" required="required" name="course">
+             <span>Course</span>
+         </div>
+         <div class="inputBox">
+           <input type="number" required="required" name="phoneno">
+           <span>Phone Number</span>
+         </div>
+         <div class="inputBox">
+           <input type="text" required="required" name="secroll">
+           <span>Section & Roll no</span>
+         </div>
+         <div class="inputBox">
+           <input type="number" required="required" name="id">
+           <span>College ID</span>
+         </div>
+         <div id="year">
+           <span>Select Acedamic Year:</span><br><br>
+           <label><input type="radio" name="radioBtn" value="FY">First Year</label><br><br>
+           <label><input type="radio" name="radioBtn" value="SY">Second Year</label><br><br>
+           <label><input type="radio" name="radioBtn" value="TY">Third Year</label><br><br>
+         </div>
+         <div>
+
+          <span>Which position would you like to hold?</span>
+          <select name="position" required="required">
+            <option value="Head">None</option>
+            <option value="Head">Head</option>
+            <option value="Co-Head">Co-Head</option>
+            <option value="Data Handler">Data Handler</option>
+            <option value="Group Leader">Group Leader</option>
+            <option value="Executive">Executive</option>
+          </select>
+          
+        </div>
+        <div class="inputBox">
+          <button class="enter">Register</button>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button class="enter" id="enterr">Cancel</button> 
+        </div>
+       </div>
+     </div>
+         
+   </form>
+ </center>
+  </body>
+  <script>const cancelButton = document.querySelector('#enterr');
+    cancelButton.addEventListener('click', () => {
+      window.location.href = '/project file/mainpage/mainpage.php';
+    });</script>
+    
+</html>

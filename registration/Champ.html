@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="regforms.css">
+  </head>
+<body id="champ"><form method="post" action="champsql.php">
+  <center>
+    <div class="container">
+     <div class="card">
+       <form method="post" action="branding.php">
+     
+         <a class="singup">Champ's Club Registration Form</a>
+ 
+         <div class="inputBox">
+             <input type="text" required="required" name="name">
+             <span>Name</span>
+         </div>
+         <div class="inputBox">
+             <input type="text" required="required" name="course">
+             <span>Course</span>
+         </div>
+         <div class="inputBox">
+           <input type="number" required="required" name="phoneno">
+           <span>Phone Number</span>
+         </div>
+         <div class="inputBox">
+           <input type="text" required="required" name="secroll">
+           <span>Section & Roll no</span>
+         </div>
+         <div class="inputBox">
+           <input type="number" required="required" name="id">
+           <span>College ID</span>
+         </div>
+         <div id="year">
+           <span>Select Acedamic Year:</span><br><br>
+           <label><input type="radio" name="radioBtn" value="FY">First Year</label><br><br>
+           <label><input type="radio" name="radioBtn" value="SY">Second Year</label><br><br>
+           <label><input type="radio" name="radioBtn" value="TY">Third Year</label><br><br>
+         </div>
+         
+         <div class="inputBox">
+           <button class="enter">Register</button>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <button class="enter" id="enterr">Cancel</button> 
+     </div>
+         
+   
+    </form>
+ </center>
+  </body>
+  <script>const cancelButton = document.querySelector('#enterr');
+cancelButton.addEventListener('click', () => {
+  window.location.href = '/project file/mainpage/mainpage.php';
+});</script>
+
+</html>

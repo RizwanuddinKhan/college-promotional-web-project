@@ -1,0 +1,32 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="admin page.css" />
+    <title>Form Input Wave</title>
+  </head>
+  
+  <body>
+    <div class="container">
+      <h1>Admin Login</h1>
+      <form action="login.php" method="post">
+        <div class="form-control">
+          <input type="number" name="ID" required>
+          <label>ID</label>
+        </div>
+
+        <div class="form-control">
+          <input type="password" name="PASSWORD" required>
+          <label>Password</label>
+        </div>
+
+        <button class="btn" name="submit">Login</button>
+
+        <p class="text">Having trouble ?<a href="#footer"> Contact us! </a> </p>
+      </form>
+    </div>
+    <script src="admin page.js"></script>
+  </body>
+  <footer id="footer"></footer>
+</html>

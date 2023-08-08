@@ -1,0 +1,97 @@
+nav{
+    background-image: linear-gradient(rgb(53, 226, 160),#055247);
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+    padding-left: 20px;
+    display:flex;
+    padding-bottom: 10px;
+}
+.logo{
+    display: flex;
+    
+}
+h1{
+    font-size:50px;
+    font-family:old english text mt;
+    margin-left:10px;
+    color:white;
+    font-weight:lighter;
+    margin-bottom:10 px;
+    margin-top: 0px;
+}
+nav ul {
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    display:flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 0px;
+    align-items: flex-end;
+}
+.navtabs{
+    display:flex;
+    align-items:right;
+    align-content:right;
+}
+nav ul li {
+    display:flex;
+    margin-right: 40px;
+    align-items: flex-end;
+
+}
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background-color:whitesmoke;
+    color: goldenrod;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+  }
+  
+  th,td {
+    text-align: left;
+    padding: 8px;
+    font-size: larger;
+    font-family:'Lucida Sans Regular';
+  }
+  th {
+    font-family:Agency FB;
+    background-image: linear-gradient(rgb(53, 226, 160),#055247);
+    color: white;
+    font-size:25px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  input[type='text'], input[type='submit'], input[type='reset'] {
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-top: 50px;
+  }
+  
+  input[type='submit'] {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  input[type='submit']:hover {
+    background-color:goldenrod;
+  }
+  
+  input[type='checkbox'] {
+    transform: scale(1.5);
+  }
+  

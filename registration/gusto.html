@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="regforms.css">
+  </head>
+<body id="gusto"><form method="post" action="gustosql.php">
+ <center> <div class="container">
+    <div class="card"><form method="post" action="branding.php">
+    
+        <a class="singup">Gusto Registration Form</a>
+        <div class="inputBox1">
+            <input type="text" required="required" name="name">
+            <span class="user">Name</span>
+        </div>
+
+        <div class="inputBox">
+            <input type="text" required="required" name="course">
+            <span>Course</span>
+        </div>
+
+        <div class="inputBox">
+            <input type="number" required="required" name="phoneno">
+            <span>Phone no</span>
+        </div>
+        
+        <div class="inputBox">
+          <input type="text" required="required" name="secroll">
+          <span>Section & Roll no</span>
+      </div>
+      <div class="inputBox">
+        <input type="text" required="required" name="id">
+        <span>College ID</span>
+    </div>
+      <div>
+
+        <span>Which team would you want to be a part of?</span>
+        <select name="position" required="required">
+          <option value="Management">Management</option>
+          <option value="Security">Security</option>
+          <option value="Photography">Photography</option>
+          <option value="Editing">Editing</option>
+          <option value="Dance">Dance</option>
+          <option value="Sports">Sports</option>
+        </select>
+        
+      </div>
+  
+      <div id="year">
+        <span>Select Acedamic Year:</span><br><br>
+        <label><input type="radio" name="radioBtn" value="FY">First Year</label><br><br>
+        <label><input type="radio" name="radioBtn" value="SY">Second Year</label><br><br>
+        <label><input type="radio" name="radioBtn" value="TY">Third Year</label><br><br>
+      </div>
+      <div class="inputBox">
+        <button class="enter">Register</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="enter" id="enterr">Cancel</button> 
+      </div>
+</div>
+</center>
+  </form>
+  </body>
+  <script>const cancelButton = document.querySelector('#enterr');
+    cancelButton.addEventListener('click', () => {
+      window.location.href = '/project file/mainpage/mainpage.php';
+    });</script>
+</html>
